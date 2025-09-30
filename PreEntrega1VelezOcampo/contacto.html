@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Titulo y navegacion-->
+    <header>
+        <h1>Miguel Angel Velez Ocampo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobreMi.html">Sobre mi</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seccion Introduccion de contacto -->
+    <main>
+        <section id="intro-contacto">
+            <h2>Contáctame.</h2>
+            <p>Si quieres ponerte en contacto conmigo, colaborar en un proyecto o simplemente saludar, puedes llenar el siguente formulario:</p>
+        </section>
+        
+        <!-- Seccion Formulario -->
+        <section id="formulario-contacto">
+            <h2>Formulario</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+                <label for="email">Correo electronico:</label><br>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>        
+    </main>
+
+        <!-- En este footer no se que pondre todavia pero szs el footer -->
+    <footer>
+        <p>© 2025 Miguel Angel Velez</p>
+    </footer>
+</body>
+</html>

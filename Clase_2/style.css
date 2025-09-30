@@ -1,0 +1,13 @@
+.titulo{
+    color: brown !important;
+}
+
+p{
+    background-color: aqua;
+}
+
+.segundoParrafo {
+    background-color: red;
+    color: blue;
+    
+}
