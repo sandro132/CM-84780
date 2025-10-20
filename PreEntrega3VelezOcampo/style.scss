@@ -6,6 +6,13 @@ $color-header: #222;
 $principal-foun: 'Poppins', Arial, sans-serif;
 $soft-shadow: 0 4px 10px rgba(0,0,0,0.15);
 
+// Reset //
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 // GENERAL STYLE//
 
@@ -74,6 +81,8 @@ nav{
     }
 }
 
+// HOME PAGE //
+
 .presentacion {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -118,6 +127,10 @@ section {
 }
 
 #mis-intereses {
+    h2 {
+        
+    }
+
     ul{
         display: flex;
         justify-content: center;
@@ -136,6 +149,28 @@ section {
 
     li:hover{
         background-color: $secundary-color;
+    }
+}
+
+#ruta-sobre-mi {
+    text-align: center;
+    margin: 60px auto;
+    padding: 20px;
+
+    h2 {
+        font-size: 1.8rem;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: $secundary-color;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }
 
@@ -205,7 +240,7 @@ section {
 
 #tecnologias {
     background-color: #fff;
-    margin: 60px; max-width: 1000px;
+    margin: 60px auto; max-width: 1000px;
     padding: 40px 20px;
     border-radius: 20px;
     box-shadow: $soft-shadow;
@@ -247,4 +282,332 @@ section {
     }
 }
 
-// SEccion tegnologia raro. REVISAR //
+// PROYECTS SECTION //
+
+#intro-proyectos {
+    max-width: 900px;
+    margin: 60px auto 30px;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        position: relative;
+        display: inline-block;
+    }
+
+    p {
+        color: $text-color;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+}
+
+#lista-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 50px auto;
+    max-width: 1100px;
+    padding: 0 1rem;
+    text-align: center;
+
+    h2 {
+        grid-column: 1 / -1;
+        font-size: 1.6rem;
+        color: $text-color;
+        font-weight: 700;
+    }
+
+    article {
+        background: #fff;
+        border-radius: 15px;
+        padding: 1.8rem 1.3rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    article:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+}
+
+.icono-proyecto {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+#lista-proyectos h3 {
+    color: $secundary-color;
+    line-height: 1.5;
+    font-weight: 600;
+    
+    p {
+        color: $text-color;
+        line-height: 1.5;
+        font-size: 0.95rem;
+    }
+}
+
+// SECTION SERVICES //
+.servicio {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    .servicio:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    i {
+        font-size: 40px;
+        color: $primary-color;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        color: $text-color;
+    }
+
+    p {
+        color: $text-color;
+        font-size: 15px;
+    }
+}
+
+#introduccion-servicios {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    
+    h2 {
+        color: $primary-color;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        }
+    
+    p {
+        font-size: 1.1rem;
+        color: $text-color;
+    }
+}
+
+#lista-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+    padding: 40px 20px;
+
+    article {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: $soft-shadow;
+        padding: 25px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    h3 {
+        color: $primary-color;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#beneficios {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: $soft-shadow;
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+}
+
+#contacto-cta {
+    text-align: center;
+    margin: 60px auto;
+    padding: 20px;
+
+    h2 {
+        font-size: 1.8rem;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: $secundary-color;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+// SECTION CONTACT //
+
+#intro-contacto {
+    text-align: center;
+    background-color: #fff;
+    padding: 60px 20px 30px;
+    margin: 40px auto 0;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: $soft-shadow;
+
+    h2 {
+        color: $primary-color;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+#formulario-contacto {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px auto 60px;
+    border-radius: 12px;
+    max-width: 700px;
+    box-shadow: $soft-shadow;
+    
+    h2 {
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    label{
+        font-weight: 600;
+        text-align: left;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fafafa;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+        outline: none;
+    }
+
+    button {
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: $background-colorfull 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+        background-color: $secundary-color;
+        transform: scale(1.03);
+    }
+}
+
+// FOOTER //
+
+footer {
+    text-align: center;
+    background-color: $color-header;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+// RESPONSIVE DESIGN //
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; gap: 5px;
+    }
+    
+    .presentacion {
+        grid-template-columns: 1fr;text-align: center;
+    }
+    
+    .perfil-img {
+        width: 180px;
+    }
+
+    #intro-contacto, #formulario-contacto, #sobre-mi, .servicios-grid, .proyecto-grid {
+        margin: 20px 10px;
+        padding: 30px 15px;
+    }
+
+    #intro-contacto h2, #formulario-contacto h2, #sobre-mi h2, #introduccion-servicios h2, #introduccion-proyectos h2 {
+        font-size: 1.5rem;
+    }
+}
